@@ -45,7 +45,8 @@ add_library(
         src/joint_velocity_example_controller.cpp
         src/model_example_controller.cpp
         src/motion_generator.cpp
-        src/move_to_start_example_controller.cpp)
+        src/move_to_start_example_controller.cpp
+        src/julia_torque_controller.cpp)
 target_include_directories(
         ${PROJECT_NAME}
         PUBLIC
@@ -65,6 +66,7 @@ ament_target_dependencies(
         rclcpp
         rclcpp_lifecycle
         std_srvs
+        std_msgs
 )
 
 pluginlib_export_plugin_description_file(
