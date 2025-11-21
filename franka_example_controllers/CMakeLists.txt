@@ -47,6 +47,7 @@ add_library(
         src/fr3/model_example_controller.cpp
         src/motion_generator.cpp
         src/fr3/move_to_start_example_controller.cpp
+        src/julia_torque_controller.cpp
 )
 
 target_include_directories( ${PROJECT_NAME}
@@ -69,6 +70,7 @@ ament_target_dependencies(
         rclcpp
         rclcpp_lifecycle
         std_srvs
+        std_msgs
 )
 
 pluginlib_export_plugin_description_file(

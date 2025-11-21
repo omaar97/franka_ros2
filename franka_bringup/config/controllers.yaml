@@ -58,7 +58,10 @@
 
       move_to_start_example_controller:
         type: franka_example_controllers/MoveToStartExampleController
-      
+
+      julia_torque_controller:
+        type: franka_example_controllers/JuliaTorqueController
+
       swerve_drive_controller:
         type: franka_mobile/SwerveDriveController
 
@@ -170,3 +173,9 @@
           has_jerk_limits        : false
           max_jerk               : 10.0  # rad/s^3
           min_jerk               : -10.0  # rad/s^3
+
+/**:
+  julia_torque_controller:
+    ros__parameters:
+      arm_id: "fr3"
+      torque_topic: "~/external_torques"
