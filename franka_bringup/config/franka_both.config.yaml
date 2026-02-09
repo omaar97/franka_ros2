@@ -20,17 +20,17 @@ ROBOT1: # Arbitrary identifier for the first robot (a Mnemonic)
   use_fake_hardware: "false" # Use simulated hardware ("true" or "false")
   use_rviz: "false" # Launch RViz if "true" (single instance for all namespaces)
 # Uncomment the following lines to add more robots in Namespaces
-# ROBOT2:
-#   arm_id: "fr3"
-#   arm_prefix: ""
-#   fake_sensor_commands: "false"
-#   joint_state_rate: 30 
-#   load_gripper: "false"
-#   namespace: "robot2"
-#   robot_ip: "192.168.0.2"
-#   urdf_file: "fr3/fr3.urdf.xacro"
-#   use_fake_hardware: "false"
-#   use_rviz: "false" 
+ROBOT2:
+  arm_id: "fr3"
+  arm_prefix: ""
+  fake_sensor_commands: "false"
+  joint_state_rate: 30 
+  load_gripper: "false"
+  namespace: "robot2"
+  robot_ip: "192.168.0.2"
+  urdf_file: "fr3/fr3.urdf.xacro"
+  use_fake_hardware: "false"
+  use_rviz: "false" 
 # ROBOT3:
 #   arm_id: ""
 #   arm_prefix: ""
@@ -41,5 +41,5 @@ ROBOT1: # Arbitrary identifier for the first robot (a Mnemonic)
 #   robot_ip: "172.16.0.5"
 #   urdf_file: "fr3/fr3.urdf.xacro"
 #   use_fake_hardware: "false"
-#   use_rviz: "false" 
+#   use_rviz: "false"  
 
