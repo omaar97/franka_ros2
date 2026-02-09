@@ -14,19 +14,19 @@ ROBOT1: # Arbitrary identifier for the first robot (a Mnemonic)
   fake_sensor_commands: "false" # Enable fake sensor commands for simulation
   joint_state_rate: 30 # Publishing rate for joint states (Hz)
   load_gripper: "false" # Enable Franka Gripper ("true" or "false")
-  namespace: "NS_1" # Namespace for robot, any string (empty string allowed - meaningful names recommended)
+  namespace: "robot1" # Namespace for robot, any string (empty string allowed - meaningful names recommended)
   robot_ip: "192.168.0.3" # Robot’s IP address or hostname
   use_fake_hardware: "false" # Use simulated hardware ("true" or "false")
   use_rviz: "false" # Launch RViz if "true" (single instance for all namespaces)
 # Uncomment the following lines to add more robots in Namespaces
 # ROBOT2: 
-#   robot_type: ""
+#   robot_type: "fr3"
 #   arm_prefix: ""
 #   fake_sensor_commands: "false"
 #   joint_state_rate: 30 
 #   load_gripper: "false"
-#   namespace: "NS_2"
-#   robot_ip: "172.16.0.4"
+#   namespace: "robot2"
+#   robot_ip: "192.168.0.2"
 #   use_fake_hardware: "false"
 #   use_rviz: "false" 
 # ROBOT3:
@@ -38,5 +38,5 @@ ROBOT1: # Arbitrary identifier for the first robot (a Mnemonic)
 #   namespace: "NS_3"
 #   robot_ip: "172.16.0.5"
 #   use_fake_hardware: "false"
-#   use_rviz: "false"   
+#   use_rviz: "false"
 
