@@ -1,5 +1,4 @@
 // Copyright (c) 2023 Franka Robotics GmbH
-// (Modified by Gemini to create an external torque controller)
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -28,14 +27,14 @@ using CallbackReturn = rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface
 namespace franka_example_controllers {
 
 /**
- * The external torque controller applies torques to the joints received from a
+ * The external torque subscriber controller applies torques to the joints received from a
  * ROS2 topic.
  */
-class JuliaTorqueController : public controller_interface::ControllerInterface {
+class TorqueSubscriberController : public controller_interface::ControllerInterface {
  public:
   using Vector7d = Eigen::Matrix<double, 7, 1>;
 
-  JuliaTorqueController();
+  TorqueSubscriberController();
 
   [[nodiscard]] controller_interface::InterfaceConfiguration command_interface_configuration()
       const override;
