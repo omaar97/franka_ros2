@@ -1,5 +1,7 @@
 # ROS 2 Integration for Franka Robotics Research Robots
 
+# This fork adds a torque subscriber for direct torque control
+
 [![CI](https://github.com/frankarobotics/franka_ros2/actions/workflows/ci.yml/badge.svg)](https://github.com/frankarobotics/franka_ros2/actions/workflows/ci.yml)
 
 > **Note:** _franka_ros2_ is not officially supported on Windows.
@@ -71,7 +73,7 @@ This repository contains a `.repos` file that helps you clone the required depen
    ```
 3. **Clone the Repositories:**
    ```bash
-    git clone https://github.com/frankarobotics/franka_ros2.git src
+    git clone https://github.com/omaar97/franka_ros2.git src
     ```
 4. **Install the dependencies**
     ```bash
