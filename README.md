@@ -99,7 +99,7 @@ For detailed instructions, on preparing VSCode to use the `.devcontainer` follow
 
 1. **Clone the Repositories:**
     ```bash
-    git clone https://github.com/frankarobotics/franka_ros2.git
+    git clone https://github.com/omaar97/franka_ros2.git
     cd franka_ros2
     ```
     We provide separate instructions for using Docker with Visual Studio Code or the command line. Choose one of the following options:
